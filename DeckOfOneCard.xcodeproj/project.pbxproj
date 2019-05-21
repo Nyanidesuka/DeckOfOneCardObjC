@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		17A834602294995E00501DD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A8345F2294995E00501DD0 /* AppDelegate.m */; };
-		17A834632294995E00501DD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A834622294995E00501DD0 /* ViewController.m */; };
 		17A834662294995E00501DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A834642294995E00501DD0 /* Main.storyboard */; };
 		17A834692294995E00501DD0 /* DeckOfOneCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17A834672294995E00501DD0 /* DeckOfOneCard.xcdatamodeld */; };
 		17A8346B2294995E00501DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A8346A2294995E00501DD0 /* Assets.xcassets */; };
 		17A8346E2294995E00501DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A8346C2294995E00501DD0 /* LaunchScreen.storyboard */; };
 		17A834712294995E00501DD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A834702294995E00501DD0 /* main.m */; };
+		17A8347A22949A1600501DD0 /* HAJCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A8347922949A1600501DD0 /* HAJCard.m */; };
+		17A8347E22949A3100501DD0 /* HAJCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A8347D22949A3100501DD0 /* HAJCardController.m */; };
+		17A834822294A49400501DD0 /* CardDealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A834812294A49400501DD0 /* CardDealerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		17A8345B2294995E00501DD0 /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A8345E2294995E00501DD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17A8345F2294995E00501DD0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		17A834612294995E00501DD0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17A834622294995E00501DD0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		17A834652294995E00501DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A834682294995E00501DD0 /* DeckOfOneCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeckOfOneCard.xcdatamodel; sourceTree = "<group>"; };
 		17A8346A2294995E00501DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A8346D2294995E00501DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A8346F2294995E00501DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17A834702294995E00501DD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17A8347822949A1600501DD0 /* HAJCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAJCard.h; sourceTree = "<group>"; };
+		17A8347922949A1600501DD0 /* HAJCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAJCard.m; sourceTree = "<group>"; };
+		17A8347C22949A3100501DD0 /* HAJCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HAJCardController.h; sourceTree = "<group>"; };
+		17A8347D22949A3100501DD0 /* HAJCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HAJCardController.m; sourceTree = "<group>"; };
+		17A834802294A49400501DD0 /* DeckOfOneCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfOneCard-Bridging-Header.h"; sourceTree = "<group>"; };
+		17A834812294A49400501DD0 /* CardDealerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDealerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +68,9 @@
 			children = (
 				17A8345E2294995E00501DD0 /* AppDelegate.h */,
 				17A8345F2294995E00501DD0 /* AppDelegate.m */,
-				17A834612294995E00501DD0 /* ViewController.h */,
-				17A834622294995E00501DD0 /* ViewController.m */,
+				17A8347F22949A3700501DD0 /* Model Controller */,
+				17A8347B22949A1E00501DD0 /* Model */,
+				17A8347722949A0200501DD0 /* View Controller */,
 				17A834642294995E00501DD0 /* Main.storyboard */,
 				17A8346A2294995E00501DD0 /* Assets.xcassets */,
 				17A8346C2294995E00501DD0 /* LaunchScreen.storyboard */,
@@ -72,6 +79,33 @@
 				17A834672294995E00501DD0 /* DeckOfOneCard.xcdatamodeld */,
 			);
 			path = DeckOfOneCard;
+			sourceTree = "<group>";
+		};
+		17A8347722949A0200501DD0 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17A834812294A49400501DD0 /* CardDealerViewController.swift */,
+				17A834802294A49400501DD0 /* DeckOfOneCard-Bridging-Header.h */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		17A8347B22949A1E00501DD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				17A8347822949A1600501DD0 /* HAJCard.h */,
+				17A8347922949A1600501DD0 /* HAJCard.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		17A8347F22949A3700501DD0 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				17A8347C22949A3100501DD0 /* HAJCardController.h */,
+				17A8347D22949A3100501DD0 /* HAJCardController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +139,7 @@
 				TargetAttributes = {
 					17A8345A2294995E00501DD0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -144,10 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A834632294995E00501DD0 /* ViewController.m in Sources */,
+				17A8347A22949A1600501DD0 /* HAJCard.m in Sources */,
 				17A834692294995E00501DD0 /* DeckOfOneCard.xcdatamodeld in Sources */,
 				17A834712294995E00501DD0 /* main.m in Sources */,
 				17A834602294995E00501DD0 /* AppDelegate.m in Sources */,
+				17A834822294A49400501DD0 /* CardDealerViewController.swift in Sources */,
+				17A8347E22949A3100501DD0 /* HAJCardController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YHWYH93Z;
 				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
@@ -298,6 +336,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HaleyJones.DeckOfOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard/View Controller/DeckOfOneCard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 39YHWYH93Z;
 				INFOPLIST_FILE = DeckOfOneCard/Info.plist;
@@ -315,6 +357,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.HaleyJones.DeckOfOneCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfOneCard/View Controller/DeckOfOneCard-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

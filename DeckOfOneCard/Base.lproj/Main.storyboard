@@ -1,24 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Card Dealer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CardDealerViewController" customModule="DeckOfOneCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokerTableBG" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-Dj-isI">
+                                <rect key="frame" x="-1193" y="-455" width="2800" height="1806"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVj-4g-hGj">
+                                <rect key="frame" x="64" y="76" width="286" height="429"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KVj-4g-hGj" secondAttribute="height" multiplier="2:3" id="9CA-2a-ldy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5G-sd-1qe">
+                                <rect key="frame" x="157" y="521" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="hGF-Rt-axI"/>
+                                    <constraint firstAttribute="width" secondItem="X5G-sd-1qe" secondAttribute="height" multiplier="1:1" id="tlr-RO-eIh"/>
+                                    <constraint firstAttribute="width" constant="100" id="urY-WR-hju"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
+                                <state key="normal" title="Hit" backgroundImage="blackChipTransparent">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkO-6I-FOx"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="d7m-w4-GYI">
+                                <rect key="frame" x="16" y="679" width="57" height="87"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQH-pH-e2C">
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vni-1m-EWW">
+                                        <rect key="frame" x="0.0" y="55.5" width="57" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-r5-1Oc">
+                                <rect key="frame" x="188.5" y="272" width="37" height="37"/>
+                                <color key="color" red="0.26564419654734395" green="0.284721655916648" blue="0.65922522668393779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gtN-r5-1Oc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KFz-pg-RpA"/>
+                            <constraint firstItem="X5G-sd-1qe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KPI-rw-8QL"/>
+                            <constraint firstItem="YAf-Dj-isI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PlN-Eg-QfD"/>
+                            <constraint firstItem="YAf-Dj-isI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QYZ-97-3u6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d7m-w4-GYI" secondAttribute="bottom" constant="96" id="TPc-Wy-qRC"/>
+                            <constraint firstItem="X5G-sd-1qe" firstAttribute="top" secondItem="KVj-4g-hGj" secondAttribute="bottom" constant="16" id="VSa-Yu-CfA"/>
+                            <constraint firstItem="KVj-4g-hGj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="Z5m-na-4Tg"/>
+                            <constraint firstItem="d7m-w4-GYI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="aTH-an-03p"/>
+                            <constraint firstItem="KVj-4g-hGj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="bWY-mL-cah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVj-4g-hGj" secondAttribute="trailing" constant="64" id="o0B-PR-J03"/>
+                            <constraint firstItem="gtN-r5-1Oc" firstAttribute="centerY" secondItem="KVj-4g-hGj" secondAttribute="centerY" id="tvA-vm-Oib"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="gtN-r5-1Oc" id="sAn-a9-Wu6"/>
+                        <outlet property="cardImageView" destination="KVj-4g-hGj" id="zMD-bw-w7t"/>
+                        <outlet property="suitLabel" destination="pQH-pH-e2C" id="AB9-4w-Vwu"/>
+                        <outlet property="valueLabel" destination="vni-1m-EWW" id="gnh-MI-cvp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="24.776785714285712"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="blackChipTransparent" width="523" height="526"/>
+        <image name="pokerTableBG" width="2800" height="1806"/>
+    </resources>
 </document>
